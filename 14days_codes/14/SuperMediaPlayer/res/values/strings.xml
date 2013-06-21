@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Super Media Player Main</string>
+	<string name="app_name">Super Media Player</string>
+	<string name="progresstitle">进度条......</string>
+	<string name="music_state">未开始播放音乐</string>
+</resources>

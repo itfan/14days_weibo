@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/music" android:title="Music" />
+	<item android:id="@+id/video" android:title="Video" />
+	<item android:id="@+id/about" android:title="About" />
+	<item android:id="@+id/exit" android:title="Exit" />
+</menu>

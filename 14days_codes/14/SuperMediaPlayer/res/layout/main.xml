@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/musicLa"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:id="@+id/musicState"
+					android:layout_width="wrap_content"
+					android:text="@string/music_state"
+					android:layout_height="wrap_content">
+				</TextView>
+				<TextView android:id="@+id/progressTextView"
+					android:layout_width="wrap_content"
+					android:text="Downloading......"
+					android:layout_height="wrap_content">
+				</TextView>
+				<!-- 默认的ProgressBar为隐藏 -->
+				<ProgressBar android:id="@+id/myProgressBar"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:visibility="gone" />
+				<LinearLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="vertical" android:layout_width="100px"
+					android:layout_height="100px">
+					<ListView android:id="@id/android:list"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_weight="1"
+						android:drawSelectorOnTop="false" />
+				</LinearLayout>
+
+				<LinearLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="horizontal" android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<Button android:text="Download"
+						android:id="@+id/btnDown" android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</Button>
+
+					<Button android:text="Start"
+						android:id="@+id/btnStart" android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</Button>
+					<Button android:text="Stop"
+						android:id="@+id/btnStop" android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</Button>
+
+					<Button android:text="Pause"
+						android:id="@+id/btnPause" android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</Button>
+					<Button android:text="Next"
+						android:id="@+id/btnNext" android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</Button>
+					<!--<Button android:text="previous" android:id="@+id/btnPrevious"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						</Button>-->
+				</LinearLayout>
+			</LinearLayout>
+			<TextView android:id="@+id/textview2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="this is another tab" />
+			<TextView android:id="@+id/textview3"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="this is a third tab" />
+			<TextView android:id="@+id/textview4"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="this is a four tab" />
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>
